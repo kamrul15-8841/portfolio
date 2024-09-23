@@ -1,0 +1,6 @@
+[18-Jan-2023 06:04:56 UTC] PHP Warning:  require(/home/kamrulbd/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/kamrulbd/public_html/index.php on line 34
+[18-Jan-2023 06:04:56 UTC] PHP Warning:  require(/home/kamrulbd/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/kamrulbd/public_html/index.php on line 34
+[18-Jan-2023 06:04:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/kamrulbd/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/kamrulbd/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/kamrulbd/public_html/index.php on line 34
