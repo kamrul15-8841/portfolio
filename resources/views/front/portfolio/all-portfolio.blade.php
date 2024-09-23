@@ -6,7 +6,7 @@
 
 @section('body')
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio" style="background-color: #00df6e">
         <div class="background-bg">
             <div class="overlay overlay-sm">
                 <img
@@ -75,7 +75,8 @@
 
                 <div class="grid">
                     @foreach($portfolios as $portfolio)
-                        <div class="grid-item {{ $portfolio->class }}">
+                        <div class="grid-item {{ $portfolio->class }}"
+                             style="border: 1px solid yellow; border-radius: 30px;">
                             <div class="gallery-image">
                                 <img src="{{ asset($portfolio->image) }}" class="h-100 w-100" alt=""/>
                                 <div class="img-overlay">
@@ -93,9 +94,9 @@
                     @endforeach
                 </div>
 
-                <div class="more-folio">
-                    <a href="#portfolio" class="btn">More Folio</a>
-                </div>
+{{--                <div class="more-folio">--}}
+{{--                    <a href="#portfolio" class="btn">More Folio</a>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>

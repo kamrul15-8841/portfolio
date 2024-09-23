@@ -1,5 +1,5 @@
 <header id="header">
-    <div class="overlay overlay-lg">
+    <div class="overlay overlay-lg" style="background-color: #00d0b7">
         <img src="{{ asset('/') }}front/img/shapes/square.png" class="shape square" alt="" />
         <img src="{{ asset('/') }}front/img/shapes/circle.png" class="shape circle" alt="" />
         <img
@@ -23,36 +23,36 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <a href="{{ route('home') }}">
-                    <img src="{{ asset('/') }}front/img/logo.png" alt="" />
+                <a href="{{ route('home') }}" >
+                    <img  class="" src="{{ asset('/') }}front/img/logo.png" alt="" />
                 </a>
             </div>
 
             <div class="links">
                 <ul>
                     <li>
-                        <a class="nav-link" class="nav-link" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link text-light" class="nav-link" href="{{ route('home') }}">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{ route('service') }}">Services</a>
+                        <a class="nav-link text-light" href="{{ route('service') }}">Services</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{ route('all-portfolio') }}">Portfolio</a>
+                        <a class="nav-link text-light" href="{{ route('all-portfolio') }}">Portfolio</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="{{ route('about') }}">About</a>
+                        <a class="nav-link text-light" href="{{ route('about') }}">About</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                        <a class="nav-link text-light" href="{{ route('contact') }}">Contact</a>
                     </li>
-                    
+
                     <li>
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link text-light" href="{{ route('login') }}">Login</a>
                     </li>
-                    
+
                     <li>
-                        <a class="nav-link" href="{{ route('gallery') }}" class="active">Gallery</a>
+                        <a class="nav-link text-light" href="{{ route('gallery') }}" class="active">Gallery</a>
                     </li>
 {{--                    <li>--}}
 {{--                        <a class="nav-link" href="#hireme" class="active">Hire me</a>--}}

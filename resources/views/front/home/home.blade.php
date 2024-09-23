@@ -5,16 +5,17 @@
 @endsection
 @section('body')
 
-    <div class="header-content">
+    <div class="header-content" style="background-color: #dffff9">
         <div class="container grid-2">
             <div class="column-1">
-                <h1 class="header-title">Md. Kamrul Hasan</h1>
-                <p class="text">
-                    Hello, I'm Md. Kamrul Hasan, web design and developer.
+                <h1 class="header-title" style="color: #28d106">Md. Kamrul Hasan</h1>
+                <h4 class="" style="color: #826800">  Application Developer at Noman Group</h4>
+                <p class="text" style="color: #001892">
+                    Hello, I'm Md. Kamrul Hasan, Full-Stack Web Developer.
                     I believe I am a good team worker and I have the skills, qualifications, and experience necessary to make a significant contribution to your organization.
-                    hic!
+                    I believe I am Dynamic software engineer with expertise in PHP, Laravel, Vue.js, and React Native, seeking to contribute to innovative projects in a collaborative environment. Committed to delivering high-quality solutions that enhance user experiences and growth.
                 </p>
-                <a href="https://drive.google.com/drive/u/0/folders/1e0W8Rz-nAmuLRohAY8r1vwxwdU4pcyr4" class="btn">Download CV</a>
+                <a href="https://drive.google.com/drive/u/0/folders/1e0W8Rz-nAmuLRohAY8r1vwxwdU4pcyr4" class="btn btn-outline-info" style="color: #28d106">Download CV</a>
             </div>
 
             <div class="column-2 image">
@@ -28,7 +29,7 @@
         </div>
     </div>
 
-    <section class="services section bg-light" id="services">
+    <section class="services section" id="services" style="background-color: #eeebff">
         <div class="container">
             <div class="section-header">
                 <h3 class="title" data-title="What I Do">Services</h3>
@@ -37,22 +38,22 @@
                 </p>
             </div>
 
-            <div class="cards">
+            <div class="cards" >
                 @foreach($services as $service)
-                    <div class="card-wrap">
+                    <div class="card-wrap" >
                         <img
                             src="{{ asset('/') }}front/img/shapes/points3.png"
                             class="points points1 points-sq"
                             alt=""
                         />
-                        <div class="card" data-card="UI/UX">
+                        <div class="card" data-card="UI/UX" style="max-height: 400px">
                             <div class="card-content z-index">
                                 <img src="{{ asset($service->image) }}" class="icon" alt="" />
                                 <h3 class="title-sm">{{ $service->title }}</h3>
                                 <p class="text">
                                     {{ $service->description }}
                                 </p>
-                                <a href="#" class="btn small">Read more</a>
+                                <a href="{{ route('service') }}" class="btn small">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,7 @@
         </div>
     </section>
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio" style="background-color: #00df6e">
         <div class="background-bg">
             <div class="overlay overlay-sm">
                 <img
@@ -149,14 +150,14 @@
                 </div>
 
                 <div class="more-folio">
-                    <a href="#portfolio" class="btn">More Folio</a>
+                    <a href="{{ route('all-portfolio') }}" class="btn btn-outline-light">More Folio</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about -->
 
-    <section class="about section" id="about">
+    <!-- about -->
+    <section class="about section" id="about" style="background-color: #d5fee8">
         <div class="container">
             <div class="section-header">
                 <h3 class="title" data-title="Who Am I">About me and Skills </h3>
@@ -166,10 +167,8 @@
                 <div class="column-1">
                     <h3 class="title-sm">Hello, I'm</h3>
                     <p class="text">
-                        self-motivated, energetic, enthusiastic and ever ready to learn new things.
-                        I am confident to ensuring the highest level of professionalism and commitment to my job.
-                        I am able to handle multiple tasks on a daily basis.
-                        I use a creative approach to problem solving. I have experience of working as part of a team and individually.
+                        a dedicated and innovative software engineer with a strong foundation in web and mobile application development. Currently, I am working as an Application Developer at Noman Group, where I leverage my expertise in PHP, Laravel, AJAX, Vue.js, and React Native to build and maintain robust, scalable applications.
+                        With a deep understanding of object-oriented programming (OOP) principles and hands-on experience in modern frameworks, I excel in creating efficient and user-friendly solutions.
                     </p>
                     <div class="skills">
                         <div class="skill html">
@@ -187,7 +186,7 @@
                         <div class="skill js">
                             <h3 class="skill-title">JavaScript</h3>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60%"></div>
+                                <div class="skill-progress" data-progress="70%"></div>
                             </div>
                         </div>
                         <div class="skill js">
@@ -199,23 +198,23 @@
                         <div class="skill js">
                             <h3 class="skill-title">PHP</h3>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80%"></div>
+                                <div class="skill-progress" data-progress="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill js">
+                            <h3 class="skill-title">Laravel</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85%"></div>
                             </div>
                         </div>
                         <div class="skill js">
                             <h3 class="skill-title">VueJS</h3>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="40%"></div>
+                                <div class="skill-progress" data-progress="65%"></div>
                             </div>
                         </div>
                         <div class="skill js">
                             <h3 class="skill-title">C,C++</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill js">
-                            <h3 class="skill-title">Laravel</h3>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="80%"></div>
                             </div>
@@ -251,7 +250,7 @@
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <p class="info-text">West Rajabazar, Dhaka-1215</p>
+                            <p class="info-text">Tongi, Gazipur, Dhaka</p>
                         </div>
 
                         <div class="information">
@@ -297,7 +296,7 @@
         </div>
     </section>
 
-    <section class="hireme" id="hireme">
+    <section class="hireme" id="hireme" style="background-color: #f4d4b2">
         <div class="container">
             <h3 class="title">If you are Interested</h3>
             <p class="text">

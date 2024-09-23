@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-    <section class="services section bg-light" id="services">
+    <section class="services section" id="services" style="background-color: #eeebff">
         <div class="container">
             <div class="section-header">
                 <h3 class="title" data-title="What I Do">Services</h3>
@@ -22,7 +22,7 @@
                         class="points points1 points-sq"
                         alt=""
                     />
-                    <div class="card" data-card="UI/UX">
+                    <div class="card" data-card="UI/UX" style="max-height: 400px">
                         <div class="card-content z-index">
                             <img src="{{ asset($service->image) }}" class="icon" alt="" />
                             <h3 class="title-sm">{{ $service->title }}</h3>
